@@ -1,64 +1,49 @@
 import Head from 'next/head'
-import styles from '../styles/Home.module.css'
+
+function QuizOption({text}) {
+  return (
+        <div className="rounded border-solid border-white border-2 small font-serif text-xs border-opacity-75 my-3 p-2">
+          {text}
+      </div>
+  )
+}
 
 export default function Home() {
   return (
-    <div className={styles.container}>
+    <div>
       <Head>
         <title>Create Next App</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main className={styles.main}>
-        <h1 className={styles.title}>
-          Welcome to <a href="https://nextjs.org">Next.js!</a>
-        </h1>
-
-        <p className={styles.description}>
-          Get started by editing{' '}
-          <code className={styles.code}>pages/index.js</code>
-        </p>
-
-        <div className={styles.grid}>
-          <a href="https://nextjs.org/docs" className={styles.card}>
-            <h3>Documentation &rarr;</h3>
-            <p>Find in-depth information about Next.js features and API.</p>
-          </a>
-
-          <a href="https://nextjs.org/learn" className={styles.card}>
-            <h3>Learn &rarr;</h3>
-            <p>Learn about Next.js in an interactive course with quizzes!</p>
-          </a>
-
-          <a
-            href="https://github.com/vercel/next.js/tree/master/examples"
-            className={styles.card}
-          >
-            <h3>Examples &rarr;</h3>
-            <p>Discover and deploy boilerplate example Next.js projects.</p>
-          </a>
-
-          <a
-            href="https://vercel.com/import?filter=next.js&utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-          >
-            <h3>Deploy &rarr;</h3>
-            <p>
-              Instantly deploy your Next.js site to a public URL with Vercel.
-            </p>
-          </a>
+      <main className="container font-serif flex flex-col justify-around">
+        <div>
+          <div>Question 1/10</div>
         </div>
-      </main>
+        <div>
+Acerca da Lei de Introdução do Código Civil e da vigência, aplicação e interpretação das leis, assinale a opção correta.
+        </div>
+        <div>
+    <QuizOption text={"Iniciado o transcurso da vacatio legis, se, por qualquer motivo, ocorrer nova publicação do texto legal, o prazo de obrigatoriedade da lei contará da primeira publicação."} />
 
-      <footer className={styles.footer}>
-        <a
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Powered by{' '}
-          <img src="/vercel.svg" alt="Vercel Logo" className={styles.logo} />
-        </a>
+    <QuizOption text={"A lei nova que estabelece disposições gerais revoga as leis especiais anteriores que dispuserem sobre a mesma matéria, pois não pode ocorrer conflito de leis, ou seja, uma mesma matéria não pode ser regida por diversas leis."} />
+
+    <QuizOption text={"Repristinação da lei é dar nova vigência a determinada lei, ou seja uma lei que tiver sido revogada volta a viger por determinação expressa de uma nova lei."} />
+
+    <QuizOption text={"A lei tem vigência até que a outra lei a revogue, ou, então, até que a lei nova com ela seja incompatível. Nesse caso, ocorre a derrogação da lei, ou seja, a revogação integral de uma lei anterior por uma posterior."} />
+    </div>
+
+        <div className="flex justify-center">
+
+       <div className="bg-blue-500 font-bold py-2 px-4 rounded-full">
+         Proximo
+       </div>
+
+        </div>
+
+
+      </main>
+      <footer >
       </footer>
     </div>
   )
