@@ -3,8 +3,11 @@
 @tailwind utilities;
 
 
-main {
+body {
     background-color: #14213D;
     color: #FFFFFF;
+}
+
+main {
     min-height: 100vh;
 }

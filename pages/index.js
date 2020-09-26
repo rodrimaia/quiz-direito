@@ -1,14 +1,42 @@
 import Head from 'next/head'
+import React, { useReducer } from 'react'
+import questoes from '../questoes.yaml'
 
-function QuizOption({text}) {
+function QuizOption({ text, correct, missed, onClick }) {
+  const border = correct ? "border-green-400" :
+    missed ? "border-red-400" : "border-white"
   return (
-        <div className="rounded border-solid border-white border-2 small font-serif text-xs border-opacity-75 my-3 p-2">
-          {text}
-      </div>
+    <div className={`rounded border-solid ${border} border-2 small font-serif text-xs border-opacity-75 my-3 p-2 ${correct || missed ? "cursor-not-allowed" : "cursor-pointer"} `} onClick={correct || missed ? null : onClick}>
+      {text}
+    </div>
   )
+}
+const initialState = {
+  acertos: 0,
+  showResult: false,
+  currentQuestion: 0,
+  questoes: questoes.questoes,
+  guessed: null
+};
+
+function reducer(state, action) {
+  switch (action.type) {
+    case 'GUESS':
+      return { ...state, guessed: action.q, acertos: action.q === state.currentQuestion.correta - 1 ? state.acertos + 1 : state.acertos }
+    case 'NEXT':
+      const isLast = state.currentQuestion === state.questoes.length - 1
+      return { ...state, guessed: null, showResult: isLast, currentQuestion: (isLast ? state.currentQuestion :  state.currentQuestion + 1) }
+    default:
+      throw new Error();
+  }
 }
 
 export default function Home() {
+
+  const [state, dispatch] = useReducer(reducer, initialState);
+
+  const questao = state.questoes[state.currentQuestion]
+
   return (
     <div>
       <Head>
@@ -16,35 +44,40 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main className="container font-serif flex flex-col justify-around">
+      {!state.showResult ?  <main className="container font-serif flex flex-col justify-around">
         <div>
-          <div>Question 1/10</div>
+          <div>Questao {state.currentQuestion + 1}/{state.questoes.length}</div>
         </div>
         <div>
-Acerca da Lei de Introdução do Código Civil e da vigência, aplicação e interpretação das leis, assinale a opção correta.
+          {questao.enunciado}
         </div>
         <div>
-    <QuizOption text={"Iniciado o transcurso da vacatio legis, se, por qualquer motivo, ocorrer nova publicação do texto legal, o prazo de obrigatoriedade da lei contará da primeira publicação."} />
+          {questao.respostas.map((r, i) =>
+            <QuizOption key={i} text={r} correct={(state.guessed !== null && questao.correta === i + i)} missed={state.guessed !== null && questao.correta !== i + 1} onClick={() => dispatch({ type: 'GUESS', q: i })} />
+          )}
 
-    <QuizOption text={"A lei nova que estabelece disposições gerais revoga as leis especiais anteriores que dispuserem sobre a mesma matéria, pois não pode ocorrer conflito de leis, ou seja, uma mesma matéria não pode ser regida por diversas leis."} />
-
-    <QuizOption text={"Repristinação da lei é dar nova vigência a determinada lei, ou seja uma lei que tiver sido revogada volta a viger por determinação expressa de uma nova lei."} />
-
-    <QuizOption text={"A lei tem vigência até que a outra lei a revogue, ou, então, até que a lei nova com ela seja incompatível. Nesse caso, ocorre a derrogação da lei, ou seja, a revogação integral de uma lei anterior por uma posterior."} />
-    </div>
+        </div>
 
         <div className="flex justify-center">
-
-       <div className="bg-blue-500 font-bold py-2 px-4 rounded-full">
-         Proximo
-       </div>
-
+          <div className={`cursor-pointer bg-blue-500 font-bold py-2 px-4 rounded-full ${state.guessed === null && "opacity-50 cursor-not-allowed"}`}
+            onClick={() => dispatch({ type: 'NEXT' })}>
+            Proximo
+          </div>
         </div>
+                             </main> :
 
+      <main className="container font-serif flex flex-col items-center justify-center">
+        <h1> Parabens, voce acertou { state.acertos } de {state.questoes.length} questoes </h1>
 
-      </main>
-      <footer >
-      </footer>
+        <div className="flex justify-center">
+          <div className={`cursor-pointer bg-blue-500 font-bold py-5 px-4 rounded-full my-5`}
+            onClick={() => dispatch({ type: 'RESET' })}>
+            Jogar de Novo
+          </div>
+        </div>
+       </main>
+      }
+
     </div>
   )
 }
