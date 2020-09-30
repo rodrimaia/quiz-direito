@@ -21,3 +21,10 @@ questoes:
     - "A autoridade judiciária brasileira tem competência exclusiva para processar e julgar eventual ação a ser proposta pela Fast Plane para resolver a questão."
     - "A autoridade judiciária brasileira tem competência concorrente para processar e julgar eventual ação a ser proposta pela Fast Plane para resolver a questão."
     correta: 4
+  - enunciado: "a questao 2 é a correta"
+    respostas:
+    - "correta."
+    - " questao 2."
+    - "incorreta."
+    - "errada."
+    correta: 2
