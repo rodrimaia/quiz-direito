@@ -44,10 +44,10 @@ questoes:
     correta: 2
   - enunciado: "A Lei 12965, de 23 de abril de 2014, estabelece princípios e garantias, direitos e deveres para o uso da internet no Brasil. No Capítulo II, trata dos direitos e garantias do usuário. Em seu art. 7º define que o acesso à internet é essencial ao exercício da cidadania, e ao usuário são assegurados 13 direitos. Entre esses direitos está aquele que determina que as informações devem ser claras e completas sobre coleta, uso, armazenamento, tratamento e proteção de seus dados pessoais, os quais somente poderão ser utilizados para finalidades que:
 
-I – justifiquem sua coleta.
-II – não sejam vedadas pela legislação.
-III – estejam especificadas nos contratos de prestação de serviços ou em termos de uso de aplicações de internet.
-IV – favoreçam a divulgação de notícias com interpretação ideológica em campanhas eleitorais"
+    I – justifiquem sua coleta.
+    II – não sejam vedadas pela legislação.
+    III – estejam especificadas nos contratos de prestação de serviços ou em termos de uso de aplicações de internet.
+    IV – favoreçam a divulgação de notícias com interpretação ideológica em campanhas eleitorais"
     respostas:
     - "Somente I"
     - "Somente II"
@@ -55,9 +55,9 @@ IV – favoreçam a divulgação de notícias com interpretação ideológica em
     - "somente II e III"
     - "Todas as afirmativas estão corretas"  
     correta: 3
-   - enunciado: "Em conformidade com a Lei nº 12.965/2014, a disciplina do uso da internet no Brasil tem por objetivo a promoção:
-I. Do direito de acesso à internet a todos. II. Da inovação e do fomento à ampla difusão de novas tecnologias e modelos de uso e acesso. III. Da adesão a padrões tecnológicos fechados que não permitam a comunicação, a acessibilidade e a interoperabilidade entre aplicações e bases de dados.
-Estão CORRETOS:"
+  - enunciado: "Em conformidade com a Lei nº 12.965/2014, a disciplina do uso da internet no Brasil tem por objetivo a promoção:
+    I. Do direito de acesso à internet a todos. II. Da inovação e do fomento à ampla difusão de novas tecnologias e modelos de uso e acesso. III. Da adesão a padrões tecnológicos fechados que não permitam a comunicação, a acessibilidade e a interoperabilidade entre aplicações e bases de dados.
+    Estão CORRETOS:"
     respostas:
     - "Somente os itens I e II."
     - "Somente os itens I e III."
