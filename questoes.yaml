@@ -1,19 +1,5 @@
 ---
 questoes:
-  - enunciado: "Acerca da Lei de Introdução do Código Civil e da vigência, aplicação e interpretação das leis, assinale a opção correta."
-    respostas:
-      - "Iniciado o transcurso da vacatio legis, se, por qualquer motivo, ocorrer nova publicação do texto legal, o prazo de obrigatoriedade da lei contará da primeira publicação."
-      - "A lei nova que estabelece disposições gerais revoga as leis especiais anteriores que dispuserem sobre a mesma matéria, pois não pode ocorrer conflito de leis, ou seja, uma mesma matéria não pode ser regida por diversas leis."
-      - "Repristinação da lei é dar nova vigência a determinada lei, ou seja uma lei que tiver sido revogada volta a viger por determinação expressa de uma nova lei."
-      - "A lei tem vigência até que a outra lei a revogue, ou, então, até que a lei nova com ela seja incompatível. Nesse caso, ocorre a derrogação da lei, ou seja, a revogação integral de uma lei anterior por uma posterior."
-    correta: 2
-  - enunciado: "Em função do incremento nas atividades de transporte aéreo no Brasil, a sociedade empresária Fast Plane, sediada no país, resolveu adquirir helicópteros de última geração da pessoa jurídica holandesa Nederland Air Transport, que ficou responsável pela fabricação, montagem e envio da mercadoria. O contrato de compra e venda restou celebrado, presencialmente, nos Estados Unidos da América, restando ajustado que o cumprimento da obrigação se dará no Brasil. ... "
-    respostas:
-      - "A lei aplicável na solução da questão é a holandesa, em razão do local de fabricação e montagem das aeronaves adquiridas."
-      - "A autoridade judiciária brasileira será competente para processar e julgar eventual ação proposta pela Fast Plane, mesmo se estabelecida cláusula de eleição de foro exclusivo estrangeiro, em razão do princípio da inafastabilidade da jurisdição."
-      - "A autoridade judiciária brasileira tem competência exclusiva para processar e julgar eventual ação a ser proposta pela Fast Plane para resolver a questão."
-      - "A autoridade judiciária brasileira tem competência concorrente para processar e julgar eventual ação a ser proposta pela Fast Plane para resolver a questão."
-    correta: 4
   - enunciado: "A lei Nº 12.965/2014, que regulamenta a internet no Brasil, conhecida também como Marco Civil da Internet, prevê, entre outras coisas, EXCETO:"
     respostas:
     - "Garantia da liberdade de expressão, comunicação e manifestação de pensamento"
@@ -27,6 +13,7 @@ questoes:
     - "Comissão Nacional da internet"
     - "Lei da Regulação Digital"
     - "Marco Civil da internet"
+    
     correta: 4
   - enunciado: "Considerada o marco civil da Internet e oficialmente denominada Lei N° 12.965/14, essa lei regula o uso da Internet no Brasil, por meio da previsão de princípios, garantias, direitos e deveres para quem usa a rede, bem como da determinação de diretrizes para a atuação do Estado. Sobre esse marco civil da Internet, assinale a alternativa INCORRETA."
     respostas:
@@ -35,6 +22,7 @@ questoes:
     - "Prevê a inviolabilidade e sigilo de suas comunicações. É a lei que regula o monitoramento, filtro, análise e fiscalização de conteúdo para garantir o direito à privacidade. Somente por meio de ordens judiciais para fins de investigação criminal será possível ter acesso a esses conteúdos"
     - "Autorizou as operadoras de internet a priorizar pacotes de dados em razão de arranjos comerciais. O que significa que, quando as operadoras quiserem oferecer pacotes com acesso a serviços que não consumam a franquia, poderá haver um acordo comercial entre o provedor de conexão e o aplicativo, para que o serviço seja priorizado em relação aos demais, prejudicando o consumidor "
     correta: 4
+    
   - enunciado: "O Marco Civil da Internet (Lei nº 12.965/2014) estabelece princípios, garantias, direitos e deveres para o uso da Internet no Brasil. Sobre esse assunto, assinale a alternativa correta"
     respostas:
     - "As cláusulas contratuais que em contrato de adesão, não ofereçam como alternativa ao contratante a adoção do foro brasileiro para solução de controvérsias decorrentes de serviços prestados no Brasil, são anuláveis"
@@ -42,6 +30,7 @@ questoes:
     - "O Marco Civil da Internet define registro de conexão como o código atribuído a um terminal de uma rede para permitir sua identificação, definido segundo parâmetros internacionais"
     - ")Os usos e costumes particulares da internet não podem ser utilizados como fatores de interpretação do Marco Civil da Internet"
     correta: 2
+    
   - enunciado: "A Lei 12965, de 23 de abril de 2014, estabelece princípios e garantias, direitos e deveres para o uso da internet no Brasil. No Capítulo II, trata dos direitos e garantias do usuário. Em seu art. 7º define que o acesso à internet é essencial ao exercício da cidadania, e ao usuário são assegurados 13 direitos. Entre esses direitos está aquele que determina que as informações devem ser claras e completas sobre coleta, uso, armazenamento, tratamento e proteção de seus dados pessoais, os quais somente poderão ser utilizados para finalidades que:
 
     I – justifiquem sua coleta.
@@ -55,6 +44,7 @@ questoes:
     - "somente II e III"
     - "Todas as afirmativas estão corretas"  
     correta: 3
+    
   - enunciado: "Em conformidade com a Lei nº 12.965/2014, a disciplina do uso da internet no Brasil tem por objetivo a promoção:
     I. Do direito de acesso à internet a todos. II. Da inovação e do fomento à ampla difusão de novas tecnologias e modelos de uso e acesso. III. Da adesão a padrões tecnológicos fechados que não permitam a comunicação, a acessibilidade e a interoperabilidade entre aplicações e bases de dados.
     Estão CORRETOS:"
@@ -64,3 +54,4 @@ questoes:
     - "Somente os itens II e III."
     - "Todos os itens."
     correta: 1
+    
