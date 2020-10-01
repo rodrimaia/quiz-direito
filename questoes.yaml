@@ -51,3 +51,10 @@ questoes:
      - "Todos os itens."
     correta: 1
     
+ - enunciado: "A lei Nº 12.965/2014, que regulamenta a internet no Brasil, conhecida também como Marco Civil da Internet, prevê, entre outras coisas, EXCETO:"
+    respostas:
+     - "Garantia da liberdade de expressão, comunicação e manifestação de pensamento"
+     - "Filtragem pelos provedores de qual conteúdo é ou não entregue aos usuários"
+     - "Preservação da natureza participativa da rede"
+     - "tem que ficar verde"
+    correta: 4
